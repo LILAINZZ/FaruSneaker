@@ -16,7 +16,7 @@ namespace DAL
         /*SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\FaruSneaker.mdf");*/
         /*SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\FaruSneaker.mdf");*/
         /*SqlConnection conn = new SqlConnection("Data Source=LAPTOP-G0AHHLD3\\SQLEXPRESS;Initial Catalog=FaruSneaker;Integrated Security=True");*/
-        SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=G:\University\HKII năm 2\Software LT\FaruSneaker (4)\FaruSneaker\FaruSneaker\bin\Debug\net6.0-windows\FaruSneaker.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""E:\HOC TAP\PROJECT\FaruSneaker\FaruSneaker\FaruSneaker\bin\Debug\net6.0-windows\FaruSneaker.mdf"";Integrated Security=True;Connect Timeout=30");
         SqlDataAdapter adap;
         SqlCommand cmd;
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fWX4JgxIn4Fe2IbkUObv6XFhzc/m/NxPsiZ/yE2KCy1bf4Y7JsBuo1DOUHFKgqvABvBWGltwy0MvWwH/7EecjQ==",
+  "dgSpecHash": "eHNpf7OC69K0VlowQQTE/ZUzgeHXYQJh3RC7arPVbjOnm8nmfCE5YMKhtwyPgL5IzS/gLmbfu40x1fk2uXOjRA==",
   "success": true,
-  "projectFilePath": "E:\\HOC TAP\\PROJECT\\FaruSneaker_4\\FaruSneaker_4\\FaruSneaker\\FaruSneaker\\FaruSneaker.csproj",
+  "projectFilePath": "E:\\HOC TAP\\PROJECT\\FaruSneaker\\FaruSneaker\\FaruSneaker\\FaruSneaker.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

@@ -28,256 +28,261 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txt_Price = new System.Windows.Forms.TextBox();
-            this.rtx_Description = new System.Windows.Forms.RichTextBox();
-            this.txt_Name = new System.Windows.Forms.TextBox();
-            this.txt_ID = new System.Windows.Forms.TextBox();
-            this.dgv_service = new System.Windows.Forms.DataGridView();
-            this.btn_Update = new System.Windows.Forms.Button();
-            this.btn_Remove = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
-            this.btn_Add = new System.Windows.Forms.Button();
-            this.btn_Clear = new System.Windows.Forms.Button();
-            this.lbl_ID = new System.Windows.Forms.Label();
-            this.lbl_Description = new System.Windows.Forms.Label();
-            this.lbl_Name = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_search = new FaruSneaker.CButton();
-            this.txt_search = new System.Windows.Forms.TextBox();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_service)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+            groupBox1 = new GroupBox();
+            label2 = new Label();
+            txt_Price = new TextBox();
+            rtx_Description = new RichTextBox();
+            txt_Name = new TextBox();
+            txt_ID = new TextBox();
+            dgv_service = new DataGridView();
+            btn_Update = new Button();
+            btn_Remove = new Button();
+            label11 = new Label();
+            btn_Add = new Button();
+            btn_Clear = new Button();
+            lbl_ID = new Label();
+            lbl_Description = new Label();
+            lbl_Name = new Label();
+            label1 = new Label();
+            pictureBox1 = new PictureBox();
+            btn_search = new CButton();
+            txt_search = new TextBox();
+            groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgv_service).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txt_Price);
-            this.groupBox1.Controls.Add(this.rtx_Description);
-            this.groupBox1.Controls.Add(this.txt_Name);
-            this.groupBox1.Controls.Add(this.txt_ID);
-            this.groupBox1.Controls.Add(this.dgv_service);
-            this.groupBox1.Controls.Add(this.btn_Update);
-            this.groupBox1.Controls.Add(this.btn_Remove);
-            this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.btn_Add);
-            this.groupBox1.Controls.Add(this.btn_Clear);
-            this.groupBox1.Controls.Add(this.lbl_ID);
-            this.groupBox1.Controls.Add(this.lbl_Description);
-            this.groupBox1.Controls.Add(this.lbl_Name);
-            this.groupBox1.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox1.Location = new System.Drawing.Point(32, 89);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1133, 622);
-            this.groupBox1.TabIndex = 10;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "THÔNG TIN DỊCH VỤ";
+            groupBox1.BackColor = Color.White;
+            groupBox1.Controls.Add(label2);
+            groupBox1.Controls.Add(txt_Price);
+            groupBox1.Controls.Add(rtx_Description);
+            groupBox1.Controls.Add(txt_Name);
+            groupBox1.Controls.Add(txt_ID);
+            groupBox1.Controls.Add(dgv_service);
+            groupBox1.Controls.Add(btn_Update);
+            groupBox1.Controls.Add(btn_Remove);
+            groupBox1.Controls.Add(label11);
+            groupBox1.Controls.Add(btn_Add);
+            groupBox1.Controls.Add(btn_Clear);
+            groupBox1.Controls.Add(lbl_ID);
+            groupBox1.Controls.Add(lbl_Description);
+            groupBox1.Controls.Add(lbl_Name);
+            groupBox1.Font = new Font("Bahnschrift Condensed", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            groupBox1.Location = new Point(32, 89);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(1133, 622);
+            groupBox1.TabIndex = 10;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "THÔNG TIN DỊCH VỤ";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(15, 119);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 24);
-            this.label2.TabIndex = 39;
-            this.label2.Text = "Đơn giá";
+            label2.AutoSize = true;
+            label2.Font = new Font("Bahnschrift Condensed", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(15, 119);
+            label2.Name = "label2";
+            label2.Size = new Size(59, 24);
+            label2.TabIndex = 39;
+            label2.Text = "Đơn giá";
             // 
             // txt_Price
             // 
-            this.txt_Price.Location = new System.Drawing.Point(15, 146);
-            this.txt_Price.Name = "txt_Price";
-            this.txt_Price.Size = new System.Drawing.Size(234, 32);
-            this.txt_Price.TabIndex = 38;
+            txt_Price.Location = new Point(15, 146);
+            txt_Price.Name = "txt_Price";
+            txt_Price.Size = new Size(234, 32);
+            txt_Price.TabIndex = 38;
             // 
             // rtx_Description
             // 
-            this.rtx_Description.Location = new System.Drawing.Point(15, 222);
-            this.rtx_Description.Name = "rtx_Description";
-            this.rtx_Description.Size = new System.Drawing.Size(505, 224);
-            this.rtx_Description.TabIndex = 37;
-            this.rtx_Description.Text = "";
+            rtx_Description.Location = new Point(15, 222);
+            rtx_Description.Name = "rtx_Description";
+            rtx_Description.Size = new Size(505, 224);
+            rtx_Description.TabIndex = 37;
+            rtx_Description.Text = "";
             // 
             // txt_Name
             // 
-            this.txt_Name.Location = new System.Drawing.Point(286, 69);
-            this.txt_Name.Name = "txt_Name";
-            this.txt_Name.Size = new System.Drawing.Size(234, 32);
-            this.txt_Name.TabIndex = 35;
+            txt_Name.Location = new Point(286, 69);
+            txt_Name.Name = "txt_Name";
+            txt_Name.Size = new Size(234, 32);
+            txt_Name.TabIndex = 35;
             // 
             // txt_ID
             // 
-            this.txt_ID.Location = new System.Drawing.Point(15, 68);
-            this.txt_ID.Name = "txt_ID";
-            this.txt_ID.Size = new System.Drawing.Size(234, 32);
-            this.txt_ID.TabIndex = 34;
+            txt_ID.Location = new Point(15, 68);
+            txt_ID.Name = "txt_ID";
+            txt_ID.Size = new Size(234, 32);
+            txt_ID.TabIndex = 34;
             // 
             // dgv_service
             // 
-            this.dgv_service.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_service.Location = new System.Drawing.Point(546, 69);
-            this.dgv_service.Name = "dgv_service";
-            this.dgv_service.RowHeadersWidth = 51;
-            this.dgv_service.RowTemplate.Height = 29;
-            this.dgv_service.Size = new System.Drawing.Size(564, 458);
-            this.dgv_service.TabIndex = 33;
+            dgv_service.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgv_service.Location = new Point(546, 69);
+            dgv_service.Name = "dgv_service";
+            dgv_service.RowHeadersWidth = 51;
+            dgv_service.RowTemplate.Height = 29;
+            dgv_service.Size = new Size(564, 458);
+            dgv_service.TabIndex = 33;
+            dgv_service.CellClick += dgv_service_CellClick;
             // 
             // btn_Update
             // 
-            this.btn_Update.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(197)))), ((int)(((byte)(57)))));
-            this.btn_Update.ForeColor = System.Drawing.Color.Black;
-            this.btn_Update.Location = new System.Drawing.Point(286, 495);
-            this.btn_Update.Name = "btn_Update";
-            this.btn_Update.Size = new System.Drawing.Size(133, 37);
-            this.btn_Update.TabIndex = 32;
-            this.btn_Update.Text = "Cập nhật ";
-            this.btn_Update.UseVisualStyleBackColor = false;
+            btn_Update.BackColor = Color.FromArgb(233, 197, 57);
+            btn_Update.ForeColor = Color.Black;
+            btn_Update.Location = new Point(286, 495);
+            btn_Update.Name = "btn_Update";
+            btn_Update.Size = new Size(133, 37);
+            btn_Update.TabIndex = 32;
+            btn_Update.Text = "Cập nhật ";
+            btn_Update.UseVisualStyleBackColor = false;
+            btn_Update.Click += btn_Update_Click;
             // 
             // btn_Remove
             // 
-            this.btn_Remove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(197)))), ((int)(((byte)(57)))));
-            this.btn_Remove.ForeColor = System.Drawing.Color.Black;
-            this.btn_Remove.Location = new System.Drawing.Point(101, 495);
-            this.btn_Remove.Name = "btn_Remove";
-            this.btn_Remove.Size = new System.Drawing.Size(133, 37);
-            this.btn_Remove.TabIndex = 31;
-            this.btn_Remove.Text = "Xóa ";
-            this.btn_Remove.UseVisualStyleBackColor = false;
+            btn_Remove.BackColor = Color.FromArgb(233, 197, 57);
+            btn_Remove.ForeColor = Color.Black;
+            btn_Remove.Location = new Point(101, 495);
+            btn_Remove.Name = "btn_Remove";
+            btn_Remove.Size = new Size(133, 37);
+            btn_Remove.TabIndex = 31;
+            btn_Remove.Text = "Xóa ";
+            btn_Remove.UseVisualStyleBackColor = false;
+            btn_Remove.Click += btn_Remove_Click;
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(780, 41);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(121, 24);
-            this.label11.TabIndex = 30;
-            this.label11.Text = "THEO DÕI DỊCH VỤ";
+            label11.AutoSize = true;
+            label11.Font = new Font("Bahnschrift Condensed", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label11.Location = new Point(780, 41);
+            label11.Name = "label11";
+            label11.Size = new Size(121, 24);
+            label11.TabIndex = 30;
+            label11.Text = "THEO DÕI DỊCH VỤ";
             // 
             // btn_Add
             // 
-            this.btn_Add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(197)))), ((int)(((byte)(57)))));
-            this.btn_Add.ForeColor = System.Drawing.Color.Black;
-            this.btn_Add.Location = new System.Drawing.Point(101, 452);
-            this.btn_Add.Name = "btn_Add";
-            this.btn_Add.Size = new System.Drawing.Size(133, 37);
-            this.btn_Add.TabIndex = 28;
-            this.btn_Add.Text = "Thêm";
-            this.btn_Add.UseVisualStyleBackColor = false;
+            btn_Add.BackColor = Color.FromArgb(233, 197, 57);
+            btn_Add.ForeColor = Color.Black;
+            btn_Add.Location = new Point(101, 452);
+            btn_Add.Name = "btn_Add";
+            btn_Add.Size = new Size(133, 37);
+            btn_Add.TabIndex = 28;
+            btn_Add.Text = "Thêm";
+            btn_Add.UseVisualStyleBackColor = false;
+            btn_Add.Click += btn_Add_Click;
             // 
             // btn_Clear
             // 
-            this.btn_Clear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btn_Clear.ForeColor = System.Drawing.Color.Black;
-            this.btn_Clear.Location = new System.Drawing.Point(286, 452);
-            this.btn_Clear.Name = "btn_Clear";
-            this.btn_Clear.Size = new System.Drawing.Size(133, 37);
-            this.btn_Clear.TabIndex = 27;
-            this.btn_Clear.Text = "Xóa tùy chọn";
-            this.btn_Clear.UseVisualStyleBackColor = false;
+            btn_Clear.BackColor = Color.FromArgb(224, 224, 224);
+            btn_Clear.ForeColor = Color.Black;
+            btn_Clear.Location = new Point(286, 452);
+            btn_Clear.Name = "btn_Clear";
+            btn_Clear.Size = new Size(133, 37);
+            btn_Clear.TabIndex = 27;
+            btn_Clear.Text = "Xóa tùy chọn";
+            btn_Clear.UseVisualStyleBackColor = false;
+            btn_Clear.Click += btn_Clear_Click;
             // 
             // lbl_ID
             // 
-            this.lbl_ID.AutoSize = true;
-            this.lbl_ID.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_ID.Location = new System.Drawing.Point(15, 41);
-            this.lbl_ID.Name = "lbl_ID";
-            this.lbl_ID.Size = new System.Drawing.Size(81, 24);
-            this.lbl_ID.TabIndex = 9;
-            this.lbl_ID.Text = "Mã dịch vụ";
+            lbl_ID.AutoSize = true;
+            lbl_ID.Font = new Font("Bahnschrift Condensed", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_ID.Location = new Point(15, 41);
+            lbl_ID.Name = "lbl_ID";
+            lbl_ID.Size = new Size(81, 24);
+            lbl_ID.TabIndex = 9;
+            lbl_ID.Text = "Mã dịch vụ";
             // 
             // lbl_Description
             // 
-            this.lbl_Description.AutoSize = true;
-            this.lbl_Description.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_Description.Location = new System.Drawing.Point(15, 195);
-            this.lbl_Description.Name = "lbl_Description";
-            this.lbl_Description.Size = new System.Drawing.Size(46, 24);
-            this.lbl_Description.TabIndex = 13;
-            this.lbl_Description.Text = "Mô tả";
+            lbl_Description.AutoSize = true;
+            lbl_Description.Font = new Font("Bahnschrift Condensed", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_Description.Location = new Point(15, 195);
+            lbl_Description.Name = "lbl_Description";
+            lbl_Description.Size = new Size(46, 24);
+            lbl_Description.TabIndex = 13;
+            lbl_Description.Text = "Mô tả";
             // 
             // lbl_Name
             // 
-            this.lbl_Name.AutoSize = true;
-            this.lbl_Name.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_Name.Location = new System.Drawing.Point(286, 41);
-            this.lbl_Name.Name = "lbl_Name";
-            this.lbl_Name.Size = new System.Drawing.Size(84, 24);
-            this.lbl_Name.TabIndex = 11;
-            this.lbl_Name.Text = "Tên dịch vụ";
+            lbl_Name.AutoSize = true;
+            lbl_Name.Font = new Font("Bahnschrift Condensed", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_Name.Location = new Point(286, 41);
+            lbl_Name.Name = "lbl_Name";
+            lbl_Name.Size = new Size(84, 24);
+            lbl_Name.TabIndex = 11;
+            lbl_Name.Text = "Tên dịch vụ";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.label1.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(1059, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 24);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Đăng xuất";
+            label1.AutoSize = true;
+            label1.BackColor = Color.FromArgb(48, 48, 48);
+            label1.Font = new Font("Bahnschrift", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(1059, 28);
+            label1.Name = "label1";
+            label1.Size = new Size(101, 24);
+            label1.TabIndex = 9;
+            label1.Text = "Đăng xuất";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1178, 75);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.BackColor = Color.FromArgb(48, 48, 48);
+            pictureBox1.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox1.Location = new Point(3, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(1178, 75);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 8;
+            pictureBox1.TabStop = false;
             // 
             // btn_search
             // 
-            this.btn_search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
-            this.btn_search.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
-            this.btn_search.BorderColor = System.Drawing.Color.Transparent;
-            this.btn_search.BorderRadius = 1;
-            this.btn_search.BorderSize = 0;
-            this.btn_search.FlatAppearance.BorderSize = 0;
-            this.btn_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_search.ForeColor = System.Drawing.Color.Transparent;
-            this.btn_search.Image = global::FaruSneaker.Properties.Resources.search;
-            this.btn_search.Location = new System.Drawing.Point(571, 18);
-            this.btn_search.Name = "btn_search";
-            this.btn_search.Size = new System.Drawing.Size(81, 39);
-            this.btn_search.TabIndex = 54;
-            this.btn_search.TextColor = System.Drawing.Color.Transparent;
-            this.btn_search.UseVisualStyleBackColor = false;
+            btn_search.BackColor = Color.FromArgb(232, 232, 232);
+            btn_search.BackgroundColor = Color.FromArgb(232, 232, 232);
+            btn_search.BorderColor = Color.Transparent;
+            btn_search.BorderRadius = 1;
+            btn_search.BorderSize = 0;
+            btn_search.FlatAppearance.BorderSize = 0;
+            btn_search.FlatStyle = FlatStyle.Flat;
+            btn_search.ForeColor = Color.Transparent;
+            btn_search.Image = Properties.Resources.search;
+            btn_search.Location = new Point(571, 18);
+            btn_search.Name = "btn_search";
+            btn_search.Size = new Size(81, 39);
+            btn_search.TabIndex = 54;
+            btn_search.TextColor = Color.Transparent;
+            btn_search.UseVisualStyleBackColor = false;
             // 
             // txt_search
             // 
-            this.txt_search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
-            this.txt_search.Font = new System.Drawing.Font("Bahnschrift Condensed", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_search.Location = new System.Drawing.Point(61, 18);
-            this.txt_search.Name = "txt_search";
-            this.txt_search.Size = new System.Drawing.Size(591, 40);
-            this.txt_search.TabIndex = 55;
+            txt_search.BackColor = Color.FromArgb(232, 232, 232);
+            txt_search.Font = new Font("Bahnschrift Condensed", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_search.Location = new Point(61, 18);
+            txt_search.Name = "txt_search";
+            txt_search.Size = new Size(591, 40);
+            txt_search.TabIndex = 55;
             // 
             // Service_co
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btn_search);
-            this.Controls.Add(this.txt_search);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
-            this.Name = "Service_co";
-            this.Size = new System.Drawing.Size(1182, 711);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_service)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(btn_search);
+            Controls.Add(txt_search);
+            Controls.Add(groupBox1);
+            Controls.Add(label1);
+            Controls.Add(pictureBox1);
+            Name = "Service_co";
+            Size = new Size(1182, 711);
+            Load += Service_co_Load;
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dgv_service).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

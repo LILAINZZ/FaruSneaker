@@ -15,6 +15,7 @@ namespace FaruSneaker
     {
         BillDetail_logic bl = new BillDetail_logic();
         Product_logic pd = new Product_logic();
+        int numRestore = 0;
         private string id;
 
         public paymentdetail(string id)
@@ -79,11 +80,13 @@ namespace FaruSneaker
 
         private void load()
         {
+            dgv_product.DataSource = pd.load();
             dgv_choose.DataSource = bl.load(this.id);
         }
 
         private void btn_Add_Click(object sender, EventArgs e)
         {
+            numRestore = Convert.ToInt32(nbr_Num.Value);
             string id = rtx_PID.Text;
             string name = rtx_PName.Text;
             int num = Convert.ToInt32(nbr_Num.Value);
@@ -105,9 +108,11 @@ namespace FaruSneaker
         private void btn_Remove_Click(object sender, EventArgs e)
         {
             string id = rtx_PID.Text;
-
+            int numRestore = Convert.ToInt32(nbr_Num.Value);
             if (bl.remove(id))
             {
+                Product_logic pl = new Product_logic();
+                pl.afterCancel(id, numRestore);
                 load();
             }
         }
@@ -117,11 +122,19 @@ namespace FaruSneaker
             string id = rtx_PID.Text;
             string name = rtx_PName.Text;
             int num = Convert.ToInt32(nbr_Num.Value);
-            int price = Convert.ToInt32(rtx_Price);
-            int voucher = Convert.ToInt32(rtx_Discount);
+            int price = Convert.ToInt32(rtx_Price.Text);
+            int voucher = 0;
+            if (rtx_Discount.Text != "")
+            {
+                voucher = Convert.ToInt32(rtx_Discount.Text);
+
+            }
 
             if (bl.update(this.id, id, num, price, voucher))
             {
+                Product_logic pl = new Product_logic();
+                pl.afterCancel(id, numRestore);
+                pl.afterAdd(id, num);
                 load();
             }
         }

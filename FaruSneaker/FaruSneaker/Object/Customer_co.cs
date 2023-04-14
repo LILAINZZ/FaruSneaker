@@ -19,7 +19,7 @@ namespace FaruSneaker.Object
             load();
             txt_search.KeyPress += new KeyPressEventHandler(txt_name_KeyPress);
         }
-        Customer_logic  data = new Customer_logic();
+        Customer_logic data = new Customer_logic();
         void load()
         {
             table_C.DataSource = data.load();
@@ -121,7 +121,7 @@ namespace FaruSneaker.Object
             }
         }
 
-        private void customer_Load(object sender, EventArgs e)
+        private void Customer_co_Load(object sender, EventArgs e)
         {
             txt_cid.ReadOnly = true;
         }

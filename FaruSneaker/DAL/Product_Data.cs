@@ -56,6 +56,22 @@ namespace DAL
             }
         }
 
+        public bool afterCancel(string id, int numAdd)
+        {
+            data.Connection();
+            string query = "update Item set ItemNum = ItemNum + @numAdd where ItemID = @id";
+            SqlCommand cmd = new SqlCommand(query, data.Conn);
+            cmd.Parameters.AddWithValue("@id", id);
+            cmd.Parameters.AddWithValue("@numAdd", numAdd);
+            int res = cmd.ExecuteNonQuery();
+            data.Disconnection();
+            if (res > 0)
+            {
+                return true;
+            }
+            return false;
+        }
+
         public bool afterAdd(string id, int numAdd)
         {
             data.Connection();

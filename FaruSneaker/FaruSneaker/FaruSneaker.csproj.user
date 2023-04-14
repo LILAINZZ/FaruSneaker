@@ -32,6 +32,9 @@
     <Compile Update="Object\Products_co.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="Object\Revenue_co.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Object\Service_co.cs">
       <SubType>UserControl</SubType>
     </Compile>

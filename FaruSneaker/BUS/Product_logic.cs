@@ -24,34 +24,24 @@ namespace BUS
             return data.add(id, name, price, brand, color, size, num, importprice, importdate, image);
         }
 
+        public bool afterCancel(string id, int numAdd)
+        {
+            return data.afterCancel(id, numAdd);
+        }
+
         public bool afterAdd(string id, int numAdd)
         {
             return data.afterAdd(id, numAdd);
         }
-
-        /*public void addItem(Item_Object item)
-        {
-            data.addProduct(item);
-        }*/
 
         public bool remove(string id)
         {
             return data.remove(id);
         }
 
-        /*public void removeItem(Item_Object item)
-        {
-            data.removeProduct(item);
-        }*/
-
         public bool update(string id, string name, int price, string brand, string color, int size, int num, int importprice, DateTime importdate, byte[] image)
         {
             return data.update(id, name, price, brand, color, size, num, importprice, importdate, image);
         }
-
-        /*public void updateItem(Item_Object item)
-        {
-            data.updateProduct(item);
-        }*/
     }
 }
