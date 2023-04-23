@@ -33,6 +33,11 @@ namespace BUS
             return data.remove(id);
         }
 
+        public bool removeProduct(string id, string pid)
+        {
+            return data.removeProduct(id, pid);
+        }
+
         public bool update(string id, string pid, int num, int price, int voucher)
         {
             return data.update(id, pid, num, price, voucher);

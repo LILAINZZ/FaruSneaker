@@ -73,6 +73,22 @@ namespace DAL
             return false;
         }
 
+        public bool removeProduct(string id, string pid)
+        {
+            data.Connection();
+            string query = "delete from BillDetail where BillID = @id and ProductID = @pid";
+            SqlCommand cmd = new SqlCommand(query, data.Conn);
+            cmd.Parameters.AddWithValue("@id", id);
+            cmd.Parameters.AddWithValue("@pid", pid);
+            int res = cmd.ExecuteNonQuery();
+            data.Disconnection();
+            if (res > 0)
+            {
+                return true;
+            }
+            return false;
+        }
+
         public bool update(string id, string pid, int num, int price, int voucher)
         {
             data.Connection();

@@ -107,9 +107,9 @@ namespace FaruSneaker
 
         private void btn_Remove_Click(object sender, EventArgs e)
         {
-            string id = rtx_PID.Text;
+            string pid = rtx_PID.Text;
             int numRestore = Convert.ToInt32(nbr_Num.Value);
-            if (bl.remove(id))
+            if (bl.removeProduct(id, pid))
             {
                 Product_logic pl = new Product_logic();
                 pl.afterCancel(id, numRestore);
